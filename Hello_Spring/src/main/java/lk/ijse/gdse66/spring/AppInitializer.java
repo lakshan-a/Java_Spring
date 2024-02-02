@@ -20,9 +20,11 @@ public class AppInitializer {
         SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
 
-        ctx.close();
-
         SpringBean2 springBean2 = ctx.getBean(SpringBean2.class);
         System.out.println(springBean2);
+
+        ctx.close();
+
+
     }
 }
