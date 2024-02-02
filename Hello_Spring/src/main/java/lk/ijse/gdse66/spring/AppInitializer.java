@@ -22,14 +22,17 @@ public class AppInitializer {
         ctx.register(AppConfig.class);
         ctx.refresh();
 
-        AppConfig appConfig = ctx.getBean(AppConfig.class);
-        System.out.println(appConfig);
+//        AppConfig appConfig = ctx.getBean(AppConfig.class);
+//        System.out.println(appConfig);
 
         SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
 
         SpringBean springBean1 = (SpringBean) ctx.getBean("SpringBean");
         System.out.println(springBean1);
+
+        SpringBean sb = (SpringBean) ctx.getBean("sb");
+        System.out.println(sb);
 
 //        ctx.registerShutdownHook();
 
