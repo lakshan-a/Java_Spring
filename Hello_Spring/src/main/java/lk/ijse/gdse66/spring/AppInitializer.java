@@ -2,6 +2,7 @@ package lk.ijse.gdse66.spring;
 
 import lk.ijse.gdse66.spring.bean.SpringBean;
 import lk.ijse.gdse66.spring.bean.SpringBean2;
+import lk.ijse.gdse66.spring.bean.SpringBean3;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
@@ -28,11 +29,13 @@ public class AppInitializer {
         SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
 
-        SpringBean springBean1 = (SpringBean) ctx.getBean("SpringBean");
-        System.out.println(springBean1);
+//
 
         SpringBean sb = (SpringBean) ctx.getBean("sb");
         System.out.println(sb);
+
+        SpringBean3 springBean3 = ctx.getBean(SpringBean3.class);
+        System.out.println(springBean3);
 
 //        ctx.registerShutdownHook();
 
