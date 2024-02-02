@@ -11,5 +11,8 @@ public class AppInitializer {
 
         ctx.register(AppConfig.class);
         ctx.refresh();
+
+        AppConfig appConfig = ctx.getBean(AppConfig.class);
+        System.out.println(appConfig);
     }
 }
