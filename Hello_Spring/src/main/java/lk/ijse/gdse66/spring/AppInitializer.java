@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.spring;
 
 import lk.ijse.gdse66.spring.bean.SpringBean;
+import lk.ijse.gdse66.spring.bean.SpringBean2;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 
@@ -18,5 +19,10 @@ public class AppInitializer {
 
         SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
+
+        ctx.close();
+
+        SpringBean2 springBean2 = ctx.getBean(SpringBean2.class);
+        System.out.println(springBean2);
     }
 }
