@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan
+@ComponentScan(basePackages = {"lk.ijse.gdse66.spring.bean"})
 public class AppConfig {
     public AppConfig(){
         System.out.println("appConfig instance is created");
