@@ -1,8 +1,6 @@
 package lk.ijse.gdse66.spring;
 
 import lk.ijse.gdse66.spring.bean.SpringBean;
-import lk.ijse.gdse66.spring.bean.SpringBean2;
-import lk.ijse.gdse66.spring.bean.SpringBean3;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 

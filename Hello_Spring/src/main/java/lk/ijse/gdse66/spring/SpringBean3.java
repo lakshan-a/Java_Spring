@@ -1,4 +1,4 @@
-package lk.ijse.gdse66.spring.bean;
+package lk.ijse.gdse66.spring;
 
 import org.springframework.stereotype.Component;
 
