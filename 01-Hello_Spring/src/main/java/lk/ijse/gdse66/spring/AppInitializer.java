@@ -35,6 +35,10 @@ public class AppInitializer {
         SpringBean3 springBean3 = ctx.getBean(SpringBean3.class);
         System.out.println(springBean3);
 
+
+
+
+
 //        ctx.registerShutdownHook();
 
         /*SpringBean2 springBean2 = ctx.getBean(SpringBean2.class);
