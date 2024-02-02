@@ -28,15 +28,19 @@ public class AppInitializer {
         SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
 
+        SpringBean springBean1 = (SpringBean) ctx.getBean("SpringBean");
+        System.out.println(springBean1);
+
 //        ctx.registerShutdownHook();
 
-        SpringBean2 springBean2 = ctx.getBean(SpringBean2.class);
+        /*SpringBean2 springBean2 = ctx.getBean(SpringBean2.class);
         System.out.println(springBean2);
 
         ctx.close();
+
         System.out.println(ctx);
         System.out.println(springBean);
-        springBean.myMethod();
+        springBean.myMethod();*/
 
 
     }
