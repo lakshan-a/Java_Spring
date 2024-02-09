@@ -14,10 +14,12 @@ public class AppInitializer {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
         ctx.register(AppConfig.class);
         ctx.refresh();
-//        ctx.close();
 
         SpringBean bean = ctx.getBean(SpringBean.class);
         System.out.println(bean);
+
+        ctx.close();
+
 
     }
 }
