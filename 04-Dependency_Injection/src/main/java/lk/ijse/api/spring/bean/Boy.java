@@ -16,7 +16,7 @@ import javax.annotation.PreDestroy;
  * @date: 2/9/2024
  */
 
-@Component("Lahiru")
+@Component("lahiru")
 public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
     @Autowired
