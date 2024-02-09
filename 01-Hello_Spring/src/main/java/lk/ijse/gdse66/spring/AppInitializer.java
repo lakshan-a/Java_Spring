@@ -13,6 +13,8 @@ public class AppInitializer {
         ctx.register(AppConfig.class);
         ctx.refresh();
 
+        ctx.registerShutdownHook();
+
          /*  Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
@@ -49,7 +51,7 @@ public class AppInitializer {
         System.out.println(springBean);
         springBean.myMethod();*/
 
-        ctx.registerShutdownHook();
+
    /*     boolean beanDefinition = ctx.containsBeanDefinition("getJavaBean");
         System.out.println(beanDefinition);
 
@@ -64,5 +66,10 @@ public class AppInitializer {
 
         SpringBeanFour beanFour = ctx.getBean(SpringBeanFour.class);
         System.out.println(beanFour);
+
+        SpringBeanFour beanFour2 = ctx.getBean(SpringBeanFour.class);
+        System.out.println(beanFour2);
+
+
     }
 }
