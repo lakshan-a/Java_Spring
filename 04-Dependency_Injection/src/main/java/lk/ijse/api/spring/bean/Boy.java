@@ -32,33 +32,33 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
         System.out.println("Have I got a Girl Friend? " + gf);
     }
 
+
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("BeanFactory : " + beanFactory);
+        System.out.println("Sachini - setBeanFactory");
     }
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("BeanName : " + s);
+        System.out.println("Sachini - setBeanName");
+
     }
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("DisposableBean ");
+        System.out.println("Sachini - destroy");
+
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("InitializingBean");
+        System.out.println("Sachini - afterPropertiesSet");
+
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("ApplicationContext : " + applicationContext);
-    }
+        System.out.println("Sachini - setApplicationContext");
 
-    @PreDestroy
-    public void disposable(){
-        System.out.println("disposable instance is created");
     }
 }
