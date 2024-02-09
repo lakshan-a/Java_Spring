@@ -1,13 +1,15 @@
 package com.edu.ijse;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+@Scope()
 @Component
 public class SpringBeanFour {
 
     public SpringBeanFour() {
-        System.out.println("com.edu.ijse.SpringBean4");
+        System.out.println("SpringBeanFour instance is created");
 
     }
 

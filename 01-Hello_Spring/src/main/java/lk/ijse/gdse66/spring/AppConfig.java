@@ -13,9 +13,10 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.edu.ijse")
 
 public class AppConfig {
-//    public AppConfig(){
-//        System.out.println("appConfig instance is created");
-//    }
+
+    /*public AppConfig(){
+        System.out.println("appConfig instance is created");
+    }*/
 
     @Bean(name = "javaBean")
     public JavaBean getJavaBean(){
