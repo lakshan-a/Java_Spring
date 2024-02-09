@@ -15,7 +15,7 @@ public class AppInitializer {
 
         ctx.registerShutdownHook();
 
-         /*  Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+        /*Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
                 System.out.println("JVM about to shutdown");
@@ -23,22 +23,17 @@ public class AppInitializer {
             }
         }));*/
 
+        /*AppConfig appConfig = ctx.getBean(AppConfig.class);
+        System.out.println(appConfig);*/
 
-
-//        AppConfig appConfig = ctx.getBean(AppConfig.class);
-//        System.out.println(appConfig);
-
-/*        SpringBean springBean = ctx.getBean(SpringBean.class);
+        /*SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
-
-//
 
         SpringBean sb = (SpringBean) ctx.getBean("sb");
         System.out.println(sb);
 
         SpringBeanThree springBean3 = ctx.getBean(SpringBeanThree.class);
         System.out.println(springBean3);*/
-
 
 //        ctx.registerShutdownHook();
 
@@ -51,17 +46,16 @@ public class AppInitializer {
         System.out.println(springBean);
         springBean.myMethod();*/
 
-
-   /*     boolean beanDefinition = ctx.containsBeanDefinition("getJavaBean");
+        /*boolean beanDefinition = ctx.containsBeanDefinition("getJavaBean");
         System.out.println(beanDefinition);
 
         boolean springBeanFour = ctx.containsBeanDefinition("SpringBeanFour");
         System.out.println(springBeanFour);
 
         boolean springBean = ctx.containsBeanDefinition("SpringBean");
-        System.out.println(springBean);*/
+        System.out.println(springBean);
 
-        /*JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
+        JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
         System.out.println(javaBean);*/
 
         SpringBeanFour beanFour = ctx.getBean(SpringBeanFour.class);
