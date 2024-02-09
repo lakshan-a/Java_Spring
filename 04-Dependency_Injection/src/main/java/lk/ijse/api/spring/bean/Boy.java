@@ -10,7 +10,11 @@ import org.springframework.stereotype.Component;
 
 @Component("Lahiru")
 public class Boy {
+
+    private GoodGirl gf;
+
     public Boy() {
         System.out.println("Boy - Constructor");
+        System.out.println("Have I got a Girl Friend? ");
     }
 }

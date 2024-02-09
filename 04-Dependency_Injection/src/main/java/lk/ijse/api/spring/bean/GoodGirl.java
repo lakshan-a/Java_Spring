@@ -6,4 +6,7 @@ package lk.ijse.api.spring.bean;
  * @date: 2/9/2024
  */
 public interface GoodGirl {
+
+    void love ();
+
 }
