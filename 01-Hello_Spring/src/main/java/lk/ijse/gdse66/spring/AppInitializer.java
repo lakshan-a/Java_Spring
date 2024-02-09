@@ -8,6 +8,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AppInitializer {
 
     public static void main(String[] args) {
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.register(AppConfig.class);
+        ctx.refresh();
 
          /*  Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
@@ -17,10 +20,7 @@ public class AppInitializer {
             }
         }));*/
 
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 
-        ctx.register(AppConfig.class);
-        ctx.refresh();
 
 //        AppConfig appConfig = ctx.getBean(AppConfig.class);
 //        System.out.println(appConfig);
@@ -58,8 +58,10 @@ public class AppInitializer {
         boolean springBean = ctx.containsBeanDefinition("SpringBean");
         System.out.println(springBean);*/
 
-        JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
-        System.out.println(javaBean);
+        /*JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
+        System.out.println(javaBean);*/
+
+
 
     }
 }
