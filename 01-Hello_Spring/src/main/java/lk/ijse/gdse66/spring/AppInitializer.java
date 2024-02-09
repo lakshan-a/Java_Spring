@@ -36,9 +36,6 @@ public class AppInitializer {
         System.out.println(springBean3);*/
 
 
-
-
-
 //        ctx.registerShutdownHook();
 
         /*SpringBean2 springBean2 = ctx.getBean(SpringBean2.class);
@@ -50,6 +47,15 @@ public class AppInitializer {
         System.out.println(springBean);
         springBean.myMethod();*/
 
+        ctx.registerShutdownHook();
+        boolean beanDefinition = ctx.containsBeanDefinition("JavaBean");
+        System.out.println(beanDefinition);
+
+        boolean springBeanFour = ctx.containsBeanDefinition("SpringBeanFour");
+        System.out.println(springBeanFour);
+
+        boolean springBean = ctx.containsBeanDefinition("SpringBean");
+        System.out.println(springBean);
 
     }
 }
