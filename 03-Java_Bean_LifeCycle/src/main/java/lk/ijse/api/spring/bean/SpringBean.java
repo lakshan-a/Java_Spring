@@ -6,12 +6,17 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
  * @date: 2/9/2024
- */
+ * */
 
+//@PostConstruct
+//@PreDestroy
 @Component
 public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
@@ -46,6 +51,11 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("ApplicationContext : " +applicationContext);
+
+    }
+
+    @Pos
+    public void initiaialize(){
 
     }
 }
