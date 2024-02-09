@@ -7,12 +7,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author: LakshanR
  * @date: 2/9/2024
  */
-public class Applnitializer {
+public class AppInitializer {
     public static void main(String[] args) {
 
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-        ctx.register(AppConfig.class);
-        ctx.refresh();
+//        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+//        ctx.register(AppConfig.class);
+//        ctx.refresh();
 
     }
 }
