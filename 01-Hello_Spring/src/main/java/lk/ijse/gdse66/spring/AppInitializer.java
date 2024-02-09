@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.spring;
 
 import com.edu.ijse.JavaBean;
+import com.edu.ijse.SpringBeanFour;
 import lk.ijse.gdse66.spring.bean.SpringBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -61,7 +62,7 @@ public class AppInitializer {
         /*JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
         System.out.println(javaBean);*/
 
-
-
+        SpringBeanFour beanFour = ctx.getBean(SpringBeanFour.class);
+        System.out.println(beanFour);
     }
 }
