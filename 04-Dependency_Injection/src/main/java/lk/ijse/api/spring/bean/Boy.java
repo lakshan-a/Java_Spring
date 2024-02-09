@@ -1,5 +1,6 @@
 package lk.ijse.api.spring.bean;
 
+import lk.ijse.api.spring.util.Injector;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import javax.annotation.PreDestroy;
  */
 
 @Component("lahiru")
-public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+public class Boy implements Injector, BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
    /* @Autowired
     private GoodGirl gf;
@@ -26,6 +27,13 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
         this.gf =goodGirl;
     }*/
 
+    private GoodGirl gf;
+
+    @Autowired
+    @Override
+    public void inject(GoodGirl gf) {
+        this.gf =gf;
+    }
 
 
     public Boy() {
@@ -67,4 +75,6 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
         System.out.println("Sachini - setApplicationContext");
 
     }
+
+
 }
