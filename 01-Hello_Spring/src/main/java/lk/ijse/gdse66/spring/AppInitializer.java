@@ -62,8 +62,15 @@ public class AppInitializer {
         SpringBeanFour beanFour2 = ctx.getBean(SpringBeanFour.class);
         System.out.println(beanFour2);
 
+        System.out.println("------------------------------------------------");
+
         JavaBean javaBean = ctx.getBean(JavaBean.class);
         System.out.println(javaBean);
+
+        JavaBean javaBean2 = ctx.getBean(JavaBean.class);
+        System.out.println(javaBean2);
+
+
 
     }
 }
