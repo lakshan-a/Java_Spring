@@ -24,7 +24,7 @@ public class AppInitializer {
 //        AppConfig appConfig = ctx.getBean(AppConfig.class);
 //        System.out.println(appConfig);
 
-        SpringBean springBean = ctx.getBean(SpringBean.class);
+/*        SpringBean springBean = ctx.getBean(SpringBean.class);
         System.out.println(springBean);
 
 //
@@ -33,7 +33,7 @@ public class AppInitializer {
         System.out.println(sb);
 
         SpringBeanThree springBean3 = ctx.getBean(SpringBeanThree.class);
-        System.out.println(springBean3);
+        System.out.println(springBean3);*/
 
 
 
