@@ -14,6 +14,6 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     public AppConfig() {
-        System.out.println("AppCofig instance is created");
+        System.out.println("appConfig instance is created");
     }
 }
