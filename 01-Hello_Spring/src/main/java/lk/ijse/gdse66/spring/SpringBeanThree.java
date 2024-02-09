@@ -3,9 +3,9 @@ package lk.ijse.gdse66.spring;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SpringBean3 {
+public class SpringBeanThree {
 
-    public SpringBean3() {
+    public SpringBeanThree() {
         System.out.println("SpringBean3 instance is created");
     }
 }

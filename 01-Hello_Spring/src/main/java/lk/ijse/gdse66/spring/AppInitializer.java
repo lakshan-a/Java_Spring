@@ -32,7 +32,7 @@ public class AppInitializer {
         SpringBean sb = (SpringBean) ctx.getBean("sb");
         System.out.println(sb);
 
-        SpringBean3 springBean3 = ctx.getBean(SpringBean3.class);
+        SpringBeanThree springBean3 = ctx.getBean(SpringBeanThree.class);
         System.out.println(springBean3);
 
 
