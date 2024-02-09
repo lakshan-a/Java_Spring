@@ -62,6 +62,5 @@ public class AppInitializer {
         SpringBeanFour beanFour2 = ctx.getBean(SpringBeanFour.class);
         System.out.println(beanFour2);
 
-
     }
 }

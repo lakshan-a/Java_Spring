@@ -5,6 +5,7 @@ import com.edu.ijse.SpringBeanFour;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 //@ComponentScan(basePackages = "lk.ijse.gdse66.spring.bean")
 //@ComponentScan(basePackageClasses = {SpringBeanThree.class, SpringBeanFour.class})
@@ -18,6 +19,7 @@ public class AppConfig {
         System.out.println("appConfig instance is created");
     }*/
 
+    @Scope("javaBean")
     @Bean(name = "javaBean")
     public JavaBean getJavaBean(){
         return new JavaBean();
