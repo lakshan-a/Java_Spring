@@ -33,13 +33,13 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("destroy ");
+        System.out.println("DisposableBean ");
 
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("afterPropertiesSet");
+        System.out.println("InitializingBean");
 
     }
 
