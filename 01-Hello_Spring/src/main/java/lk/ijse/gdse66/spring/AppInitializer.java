@@ -71,7 +71,7 @@ public class AppInitializer {
         JavaBean javaBean2 = ctx.getBean(JavaBean.class);
         System.out.println(javaBean2);*/
 
-        final boolean isExist = ctx.containsBeanDefinition("getJavaBean");
+        final boolean isExist = ctx.containsBeanDefinition("javaBean");
         System.out.println(isExist);
 
     }
