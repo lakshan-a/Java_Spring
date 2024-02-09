@@ -5,6 +5,5 @@ package lk.ijse.api.spring;
  * @author: LakshanR
  * @date: 2/9/2024
  */
-public class lakshan {
-    public
+public interface Girl {
 }
