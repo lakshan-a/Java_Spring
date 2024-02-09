@@ -9,6 +9,9 @@ package lk.ijse.api.spring;
 public class AppInitializer {
     public static void main(String[] args) {
 
+        Girl lakshan = new lakshan();
+        lakshan.Girl();
+
 
     }
 }
