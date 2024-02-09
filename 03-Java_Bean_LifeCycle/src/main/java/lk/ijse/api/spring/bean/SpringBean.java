@@ -21,31 +21,31 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("setBeanFactory instance is created");
+        System.out.println("BeanFactory : " + beanFactory);
 
     }
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("setBeanName instance is created");
+        System.out.println("BeanName : " + s);
 
     }
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("destroy instance is created");
+        System.out.println("destroy ");
 
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("afterPropertiesSet instance is created");
+        System.out.println("afterPropertiesSet");
 
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("setApplicationContext instance is created");
+        System.out.println("ApplicationContext : " +applicationContext);
 
     }
 }
