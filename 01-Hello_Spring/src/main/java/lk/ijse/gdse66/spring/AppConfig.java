@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Configuration;
 
 //@ComponentScan(basePackages = "lk.ijse.gdse66.spring.bean")
 //@ComponentScan(basePackageClasses = {SpringBeanThree.class, SpringBeanFour.class})
+/*
 @Configuration
+*/
 @ComponentScan(basePackages = "com.edu.ijse")
 
 public class AppConfig {
