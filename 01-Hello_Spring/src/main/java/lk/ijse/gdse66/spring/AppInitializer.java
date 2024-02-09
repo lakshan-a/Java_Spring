@@ -58,7 +58,7 @@ public class AppInitializer {
         boolean springBean = ctx.containsBeanDefinition("SpringBean");
         System.out.println(springBean);*/
 
-        JavaBean javaBean = (JavaBean) ctx.getBean("getJavaBean");
+        JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
         System.out.println(javaBean);
 
     }
