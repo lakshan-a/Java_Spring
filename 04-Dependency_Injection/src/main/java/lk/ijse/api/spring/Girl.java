@@ -6,4 +6,5 @@ package lk.ijse.api.spring;
  * @date: 2/9/2024
  */
 public interface Girl {
+    void Girl();
 }

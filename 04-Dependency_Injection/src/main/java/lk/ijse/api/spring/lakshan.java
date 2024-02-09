@@ -6,5 +6,9 @@ package lk.ijse.api.spring;
  * @date: 2/9/2024
  */
 public class lakshan {
-    public
+    public void love(){
+        System.out.println("love");
+    }
+
+    public void
 }
