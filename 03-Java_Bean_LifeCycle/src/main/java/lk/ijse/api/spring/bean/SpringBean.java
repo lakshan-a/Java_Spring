@@ -17,7 +17,7 @@ import javax.annotation.PreDestroy;
  * @date: 2/9/2024
  * */
 
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 @Component
 public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
