@@ -5,8 +5,13 @@ package lk.ijse.api.spring.bean;
  * @author: LakshanR
  * @date: 2/9/2024
  */
-public class Sachini {
+public class Sachini implements GoodGirl{
     public Sachini() {
         System.out.println("Sachini - Constructor");
+    }
+
+    @Override
+    public void love() {
+        System.out.println("Sachini loves him");
     }
 }
