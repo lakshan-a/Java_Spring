@@ -56,7 +56,7 @@ public class AppInitializer {
         JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
         System.out.println(javaBean);*/
 
-        SpringBeanFour beanFour = ctx.getBean(SpringBeanFour.class);
+        /*SpringBeanFour beanFour = ctx.getBean(SpringBeanFour.class);
         System.out.println(beanFour);
 
         SpringBeanFour beanFour2 = ctx.getBean(SpringBeanFour.class);
@@ -68,7 +68,7 @@ public class AppInitializer {
         System.out.println(javaBean);
 
         JavaBean javaBean2 = ctx.getBean(JavaBean.class);
-        System.out.println(javaBean2);
+        System.out.println(javaBean2);*/
 
 
 
