@@ -1,5 +1,6 @@
 package lk.ijse.gdse66.spring;
 
+import com.edu.ijse.JavaBean;
 import lk.ijse.gdse66.spring.bean.SpringBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -48,14 +49,17 @@ public class AppInitializer {
         springBean.myMethod();*/
 
         ctx.registerShutdownHook();
-        boolean beanDefinition = ctx.containsBeanDefinition("JavaBean");
+   /*     boolean beanDefinition = ctx.containsBeanDefinition("getJavaBean");
         System.out.println(beanDefinition);
 
         boolean springBeanFour = ctx.containsBeanDefinition("SpringBeanFour");
         System.out.println(springBeanFour);
 
         boolean springBean = ctx.containsBeanDefinition("SpringBean");
-        System.out.println(springBean);
+        System.out.println(springBean);*/
+
+        JavaBean javaBean = (JavaBean) ctx.getBean("getJavaBean");
+        System.out.println(javaBean);
 
     }
 }
