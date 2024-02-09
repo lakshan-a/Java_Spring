@@ -2,8 +2,10 @@ package lk.ijse.api.spring.bean;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -15,8 +17,7 @@ import javax.annotation.PreDestroy;
  * @date: 2/9/2024
  * */
 
-//@PostConstruct
-//@PreDestroy
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 @Component
 public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
@@ -46,7 +47,7 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("ApplicationContext : " +applicationContext);
+        System.out.println("ApplicationContext : " + applicationContext);
     }
 
     @PostConstruct
@@ -58,4 +59,5 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
     public void disposable(){
         System.out.println("disposable instance is created");
     }
+
 }
