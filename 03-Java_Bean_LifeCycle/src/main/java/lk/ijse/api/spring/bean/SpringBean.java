@@ -54,8 +54,13 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
 
     }
 
-    @Pos
-    public void initiaialize(){
+    @PostConstruct
+    public void initialize(){
+        System.out.println("initialize instance is created");
+    }
 
+    @PreDestroy
+    public void disposable(){
+        System.out.println("disposable instance is created");
     }
 }
