@@ -19,7 +19,7 @@ public class AppConfig {
         System.out.println("appConfig instance is created");
     }*/
 
-    @Scope("javaBean")
+    @Scope("prototype")
     @Bean(name = "javaBean")
     public JavaBean getJavaBean(){
         return new JavaBean();
