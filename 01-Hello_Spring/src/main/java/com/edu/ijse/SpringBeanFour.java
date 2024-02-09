@@ -11,8 +11,4 @@ public class SpringBeanFour {
 
     }
 
-    @Bean(name = "javaBean")
-    public JavaBean getJavaBean(){
-        return new JavaBean();
-    }
 }
