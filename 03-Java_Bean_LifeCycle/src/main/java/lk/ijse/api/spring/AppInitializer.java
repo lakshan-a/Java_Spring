@@ -18,7 +18,12 @@ public class AppInitializer {
         SpringBean bean = ctx.getBean(SpringBean.class);
         System.out.println(bean);
 
-        ctx.close();
+        System.out.println("-----------------------------");
+
+        SpringBean bean2 = ctx.getBean(SpringBean.class);
+        System.out.println(bean2);
+
+//        ctx.close();
 
 
     }
