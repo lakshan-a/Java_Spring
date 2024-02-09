@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  * @version: v0.0.1
@@ -33,26 +34,31 @@ public class Boy implements BeanNameAware, BeanFactoryAware, ApplicationContextA
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-
+        System.out.println("BeanFactory : " + beanFactory);
     }
 
     @Override
     public void setBeanName(String s) {
-
+        System.out.println("BeanName : " + s);
     }
 
     @Override
     public void destroy() throws Exception {
-
+        System.out.println("DisposableBean ");
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-
+        System.out.println("InitializingBean");
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("ApplicationContext : " + applicationContext);
+    }
 
+    @PreDestroy
+    public void disposable(){
+        System.out.println("disposable instance is created");
     }
 }
