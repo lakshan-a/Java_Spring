@@ -71,8 +71,11 @@ public class AppInitializer {
         JavaBean javaBean2 = ctx.getBean(JavaBean.class);
         System.out.println(javaBean2);*/
 
-        final boolean isExist = ctx.containsBeanDefinition("javaBean");
+        boolean isExist = ctx.containsBeanDefinition("javaBean");
         System.out.println(isExist);
+
+        boolean isExist2 = ctx.containsBeanDefinition("springBeanFour");
+        System.out.println(isExist2);
 
     }
 }
