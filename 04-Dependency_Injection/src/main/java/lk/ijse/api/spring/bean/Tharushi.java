@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Primary
-@Qualifier("Long Hair")
 public class Tharushi implements GoodGirl{
 
     @Override
