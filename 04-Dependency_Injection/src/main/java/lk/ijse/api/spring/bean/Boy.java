@@ -27,10 +27,10 @@ public class Boy implements Injector, BeanNameAware, BeanFactoryAware, Applicati
         this.gf =goodGirl;
     }*/
 
-//    @Autowired
+
     private GoodGirl gf;
 
-
+    @Autowired
     @Override
     public void inject(GoodGirl gf) {
         this.gf =gf;
@@ -42,8 +42,8 @@ public class Boy implements Injector, BeanNameAware, BeanFactoryAware, Applicati
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a Girl Friend? " + gf);
 
-        GoodGirl sachini = new Sachini();
-        sachini.love();
+//        GoodGirl sachini = new Sachini();
+//        sachini.love();
     }
 
     @PostConstruct
