@@ -1,5 +1,6 @@
 package lk.ijse.api.spring;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -20,23 +21,27 @@ public class AppConfig {
         System.out.println("appConfig instance is created");
     }*/
 
+    @Qualifier("note")
     @Order(2)
     @Bean
     public String myString(){
         return "IJSE";
     }
 
+    @Qualifier("note")
     @Order(3)
     @Bean
     public String myString2(){
         return "ESOFT";
     }
 
+    @Qualifier("note")
     @Order(1)
     @Bean
     public String myString3(){
             return "SLIIT";
     }
+
 
 
 
