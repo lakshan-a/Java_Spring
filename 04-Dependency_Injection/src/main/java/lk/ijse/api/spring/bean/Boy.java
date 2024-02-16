@@ -22,7 +22,7 @@ import javax.annotation.PreDestroy;
  */
 
 @Component("lahiru")
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+//@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
     /* @Autowired

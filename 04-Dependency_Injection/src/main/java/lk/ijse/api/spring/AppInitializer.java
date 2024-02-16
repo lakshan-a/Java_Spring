@@ -17,12 +17,12 @@ public class AppInitializer {
         ctx.register(AppConfig.class);
         ctx.refresh();
 
-        Boy boy1 = ctx.getBean(Boy.class);
+      /*  Boy boy1 = ctx.getBean(Boy.class);
         System.out.println(boy1);
 
         System.out.println("--------------------");
         Boy boy2 = ctx.getBean(Boy.class);
-        System.out.println(boy2);
+        System.out.println(boy2);*/
 
         
     }
