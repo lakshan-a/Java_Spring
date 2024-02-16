@@ -18,15 +18,17 @@ import java.util.List;
 @Component
 public class SpringBean {
 
-     /*public SpringBean(String[] nameList) {
-        System.out.println("SpringBean() - Constructor" + nameList);
-        System.out.println(Arrays.toString(nameList));
-     }*/
+
 
     public SpringBean(@Qualifier("note")String[] nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(Arrays.toString(nameList));
     }
+
+    /*public SpringBean(String[] nameList) {
+        System.out.println("SpringBean() - Constructor" + nameList);
+        System.out.println(Arrays.toString(nameList));
+     }*/
 
     /*public SpringBean(Map<String,String> nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
