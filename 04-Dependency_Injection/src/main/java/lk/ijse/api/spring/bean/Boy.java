@@ -18,7 +18,7 @@ import javax.annotation.PreDestroy;
  */
 
 @Component("lahiru")
-public class Boy implements Injector, BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
+public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
     /* @Autowired
     private GoodGirl gf;
@@ -27,13 +27,14 @@ public class Boy implements Injector, BeanNameAware, BeanFactoryAware, Applicati
         this.gf =goodGirl;
     }*/
 
+    @Autowired
     private GoodGirl gf;
 
-    @Autowired
-    @Override
+
+  /*  @Override
     public void inject(GoodGirl gf) {
         this.gf =gf;
-    }
+    }*/
 
 
     public Boy() {
