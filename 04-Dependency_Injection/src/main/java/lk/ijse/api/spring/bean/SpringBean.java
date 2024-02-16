@@ -2,8 +2,11 @@ package lk.ijse.api.spring.bean;
 
 import org.springframework.stereotype.Component;
 
+import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @version: v0.0.1
@@ -14,8 +17,14 @@ import java.util.Arrays;
 @Component
 public class SpringBean {
 
-    public SpringBean(String[] nameList) {
+   /* public SpringBean(String[] nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(Arrays.toString(nameList));
+
+    }*/
+
+    public SpringBean(HashMap nameList) {
+        System.out.println("SpringBean() - Constructor" + nameList);
+        System.out.println(Map<String,nameList>);
     }
 }
