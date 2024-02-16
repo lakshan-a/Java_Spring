@@ -29,26 +29,26 @@ public class Sachini implements GoodGirl, BeanNameAware, BeanFactoryAware, Appli
 
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("Girl- setBeanFactory..............");
+        System.out.println("Sachini- setBeanFactory..............");
     }
 
     @Override
     public void setBeanName(String s) {
-        System.out.println("Girl- setBeanName...............");
+        System.out.println("Sachini- setBeanName...............");
     }
 
     @Override
     public void destroy() throws Exception {
-        System.out.println("Girl- destroy.............");
+        System.out.println("Sachini- destroy.............");
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("Girl- afterPropertiesSet.................");
+        System.out.println("Sachini- afterPropertiesSet.................");
     }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println("Girl-setApplicationContext..................");
+        System.out.println("Sachini-setApplicationContext..................");
     }
 }
