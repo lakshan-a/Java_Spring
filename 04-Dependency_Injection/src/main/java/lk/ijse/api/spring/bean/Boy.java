@@ -37,7 +37,6 @@ public class Boy implements Injector, BeanNameAware, BeanFactoryAware, Applicati
     }
 
 
-
     public Boy(GoodGirl gf) {
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a Girl Friend? " + gf);
