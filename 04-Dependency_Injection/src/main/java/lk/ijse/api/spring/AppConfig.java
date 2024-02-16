@@ -3,6 +3,7 @@ package lk.ijse.api.spring;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 /**
  * @version: v0.0.1
@@ -18,6 +19,7 @@ public class AppConfig {
         System.out.println("appConfig instance is created");
     }*/
 
+    @Primary
     @Bean
     public String myString(){
         return "IJSE";
