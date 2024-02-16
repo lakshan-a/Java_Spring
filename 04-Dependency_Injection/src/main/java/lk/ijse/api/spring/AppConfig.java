@@ -22,4 +22,14 @@ public class AppConfig {
     public String myString(){
         return "IJSE";
     }
+
+    @Bean
+    public String myString2(){
+        return "ESOFT";
+    }
+
+    @Bean
+    public String myString3(){
+            return "SLIIT";
+    }
 }
