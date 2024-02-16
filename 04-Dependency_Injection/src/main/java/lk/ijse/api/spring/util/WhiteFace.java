@@ -5,5 +5,7 @@ package lk.ijse.api.spring.util;
  * @author: LakshanR
  * @date: 2/16/2024
  */
-public interface WhiteFace {
+
+
+public @interface WhiteFace {
 }
