@@ -1,11 +1,13 @@
 package lk.ijse.api.spring.bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,15 +25,18 @@ public class SpringBean {
 
     }*/
 
+/*
     public SpringBean(Map<String,String> nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(nameList);
     }
+*/
 
-//    public SpringBean(List<String> nameList) {
-//        System.out.println("SpringBean() - Constructor" + nameList);
-//        System.out.println(nameList);
-//    }
+/*    @Autowired
+    public SpringBean(List<String>nameList) {
+        System.out.println("SpringBean() - Constructor" + nameList);
+        System.out.println(nameList);
+    }*/
 
 
 }
