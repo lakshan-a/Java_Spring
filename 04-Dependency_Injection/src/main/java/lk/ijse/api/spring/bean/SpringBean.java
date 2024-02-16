@@ -1,6 +1,7 @@
 package lk.ijse.api.spring.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.awt.*;
@@ -17,10 +18,14 @@ import java.util.List;
 @Component
 public class SpringBean {
 
-     public SpringBean(String[] nameList) {
+     /*public SpringBean(String[] nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(Arrays.toString(nameList));
+     }*/
 
+    public SpringBean(@Qualifier("note")String[] nameList) {
+        System.out.println("SpringBean() - Constructor" + nameList);
+        System.out.println(Arrays.toString(nameList));
     }
 
     /*public SpringBean(Map<String,String> nameList) {
