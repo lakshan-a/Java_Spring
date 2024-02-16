@@ -19,7 +19,7 @@ public class AppConfig {
         System.out.println("appConfig instance is created");
     }*/
 
- /*   @Bean
+    @Bean
     public String myString(){
         return "IJSE";
     }
@@ -32,12 +32,8 @@ public class AppConfig {
     @Bean
     public String myString3(){
             return "SLIIT";
-    }*/
-
-    @Bean
-    public String myString3(){
-        return "SLIIT";
     }
+
 
 
 }

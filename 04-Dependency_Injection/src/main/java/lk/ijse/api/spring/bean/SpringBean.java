@@ -28,10 +28,10 @@ public class SpringBean {
         System.out.println(nameList);
     }
 
-    public SpringBean(Map<String,String> nameList) {
-        System.out.println("SpringBean() - Constructor" + nameList);
-        System.out.println(nameList);
-    }
+//    public SpringBean(List<String> nameList) {
+//        System.out.println("SpringBean() - Constructor" + nameList);
+//        System.out.println(nameList);
+//    }
 
 
 }
