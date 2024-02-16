@@ -45,6 +45,10 @@ public class Boy implements Injector, BeanNameAware, BeanFactoryAware, Applicati
         sachini.love();
     }
 
+    public Boy(){
+        System.out.println("Boy() - Constructor");
+    }
+
     @PostConstruct
     public void initialize(){
         System.out.println("Have I got a Girl Friend? " + gf);
