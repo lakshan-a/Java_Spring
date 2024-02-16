@@ -19,7 +19,6 @@ public class AppConfig {
         System.out.println("appConfig instance is created");
     }*/
 
-    @Primary
     @Bean
     public String myString(){
         return "IJSE";
