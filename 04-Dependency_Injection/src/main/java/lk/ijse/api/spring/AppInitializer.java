@@ -23,5 +23,7 @@ public class AppInitializer {
         System.out.println("--------------------");
         Boy boy2 = ctx.getBean(Boy.class);
         System.out.println(boy2);
+
+        
     }
 }
