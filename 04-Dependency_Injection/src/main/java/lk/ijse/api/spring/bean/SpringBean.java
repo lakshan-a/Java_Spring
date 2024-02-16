@@ -17,7 +17,7 @@ import java.util.List;
 @Component
 public class SpringBean {
 
-   /* public SpringBean(String[] nameList) {
+    /* public SpringBean(String[] nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(Arrays.toString(nameList));
 
@@ -40,10 +40,9 @@ public class SpringBean {
         System.out.println(nameList);
     }*/
 
-    public SpringBean(Collection<String> nameList) {
+    /*public SpringBean(Collection<String> nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(nameList);
-    }
-
+    }*/
 
 }
