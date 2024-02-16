@@ -20,7 +20,7 @@ import javax.annotation.PreDestroy;
 @Component("lahiru")
 public class Boy implements Injector, BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
 
-   /* @Autowired
+    /* @Autowired
     private GoodGirl gf;
 
     private GoodGirl goodGirl(GoodGirl goodGirl){
