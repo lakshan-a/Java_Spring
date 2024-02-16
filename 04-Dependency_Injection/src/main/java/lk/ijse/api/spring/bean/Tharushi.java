@@ -17,4 +17,5 @@ public class Tharushi implements GoodGirl{
     public void love() {
         System.out.println("Tharushi loves him so much");
     }
+
 }

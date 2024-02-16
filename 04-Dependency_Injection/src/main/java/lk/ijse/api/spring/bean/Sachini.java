@@ -24,7 +24,7 @@ public class Sachini implements GoodGirl, BeanNameAware, BeanFactoryAware, Appli
 
     @Override
     public void love() {
-        System.out.println("Sachini loves him");
+        System.out.println("Sachini loves him so much");
     }
 
     @Override
