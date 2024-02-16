@@ -17,11 +17,11 @@ import java.util.List;
 @Component
 public class SpringBean {
 
-    /* public SpringBean(String[] nameList) {
+     public SpringBean(String[] nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
         System.out.println(Arrays.toString(nameList));
 
-    }*/
+    }
 
     /*public SpringBean(Map<String,String> nameList) {
         System.out.println("SpringBean() - Constructor" + nameList);
@@ -45,9 +45,9 @@ public class SpringBean {
         System.out.println(nameList);
     }*/
 
-    public SpringBean(List<GoodGirl> goodGirl) {
+    /*public SpringBean(List<GoodGirl> goodGirl) {
         System.out.println("SpringBean() - Constructor" + goodGirl);
         System.out.println(goodGirl);
-    }
+    }*/
 
 }
