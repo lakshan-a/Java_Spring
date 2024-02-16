@@ -15,6 +15,10 @@ import org.springframework.stereotype.Component;
 @Qualifier("Long Hair")
 public class Tharushi implements GoodGirl{
 
+    public Tharushi() {
+        System.out.println("Tharushi - Constructor");
+    }
+
     @Override
     public void love() {
         System.out.println("Tharushi loves him so much");
