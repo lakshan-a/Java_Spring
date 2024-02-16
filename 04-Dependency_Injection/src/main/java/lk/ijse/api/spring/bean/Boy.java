@@ -40,6 +40,9 @@ public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, Appli
     public Boy() {
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a Girl Friend? " + gf);
+
+        GoodGirl sachini = new Sachini();
+        sachini.love();
     }
 
     @PostConstruct
