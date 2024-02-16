@@ -2,6 +2,9 @@ package lk.ijse.api.spring.bean;
 
 import org.springframework.stereotype.Component;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
@@ -11,7 +14,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringBean {
 
-    public SpringBean(String name) {
-        System.out.println("SpringBean() - Constructor" + name);
+    public SpringBean(String[] nameList) {
+        System.out.println("SpringBean() - Constructor" + nameList);
+        System.out.println(Arrays.toString(nameList));
     }
 }
