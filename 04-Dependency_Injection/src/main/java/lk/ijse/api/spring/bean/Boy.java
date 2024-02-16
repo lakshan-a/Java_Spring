@@ -1,6 +1,7 @@
 package lk.ijse.api.spring.bean;
 
 import lk.ijse.api.spring.util.Injector;
+import lk.ijse.api.spring.util.WhiteFace;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +45,7 @@ public class Boy implements /*Injector,*/ BeanNameAware, BeanFactoryAware, Appli
     }*/
 
     @Autowired
-    public Boy(@Qualifier("Long Hair") GoodGirl gf){
+    public Boy(@Qualifier("Long Hair") @WhiteFace GoodGirl gf){
         this.gf=gf;
         System.out.println("Boy - Constructor");
         System.out.println("Have I got a Girl Friend? " + gf);
