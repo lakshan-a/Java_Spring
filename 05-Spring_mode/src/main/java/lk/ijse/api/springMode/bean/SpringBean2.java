@@ -1,5 +1,6 @@
 package lk.ijse.api.springMode.bean;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,4 +13,10 @@ public class SpringBean2 {
     public SpringBean2(SpringBean4 springBean4) {
         System.out.println("SpringBean2() - Constructor : " + springBean4);
     }
+
+    @Bean
+    public SpringBean3 sprinBean3(){
+        return new SpringBean3();
+    }
+
 }

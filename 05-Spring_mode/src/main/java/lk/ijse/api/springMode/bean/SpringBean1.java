@@ -16,7 +16,7 @@ public class SpringBean1 {
     }
 
     @Bean
-    public SpringBean3 sprinBeanThree(){
+    public SpringBean3 sprinBean3(){
         return new SpringBean3();
     }
 
