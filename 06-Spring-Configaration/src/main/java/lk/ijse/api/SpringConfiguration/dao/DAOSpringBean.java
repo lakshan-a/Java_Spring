@@ -5,5 +5,5 @@ package lk.ijse.api.SpringConfiguration.dao;
  * @author: LakshanR
  * @date: 2/22/2024
  */
-public class DAOSpringBean1 {
+public class DAOSpringBean {
 }
