@@ -60,4 +60,7 @@ public class SpringBean implements BeanNameAware, BeanFactoryAware, ApplicationC
         System.out.println("disposable instance is created");
     }
 
+
+
+
 }
