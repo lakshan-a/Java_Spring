@@ -1,5 +1,6 @@
 package lk.ijse.api.RunTimeInjection.bean;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
@@ -17,7 +18,7 @@ public class SpringBean1 {
 //        System.out.println("SpringBean1() - Constructor : " + myString);
 //    }
 
-    public SpringBean1 (String myString){
+    public SpringBean1 (@Value("IJSE") String myString){
         System.out.println("SpringBean1() - Constructor : " + myString);
     }
 }

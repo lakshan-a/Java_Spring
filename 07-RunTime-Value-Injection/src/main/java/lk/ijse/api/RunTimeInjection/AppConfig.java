@@ -1,6 +1,7 @@
 package lk.ijse.api.RunTimeInjection;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Configuration
-@Component
+@ComponentScan
 public class AppConfig {
 
     public AppConfig() {
