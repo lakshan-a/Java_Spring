@@ -5,9 +5,5 @@ package lk.ijse.api.RunTimeInjection;
  * @author: LakshanR
  * @date: 2/22/2024
  */
-public class AppInitializer {
-    public static void main(String[] args) {
-
-    }
-
+public class AppConfig {
 }
