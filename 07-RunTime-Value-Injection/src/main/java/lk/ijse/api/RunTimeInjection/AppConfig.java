@@ -15,9 +15,9 @@ import org.springframework.stereotype.Component;
 @ComponentScan
 public class AppConfig {
 
-    public AppConfig() {
+    /*public AppConfig() {
         System.out.println("AppConfig() - Constructor");
-    }
+    }*/
 
     @Bean
     public String getString(){
