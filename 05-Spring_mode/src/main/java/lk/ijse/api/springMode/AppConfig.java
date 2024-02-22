@@ -8,9 +8,5 @@ import org.springframework.stereotype.Component;
  * @date: 2/22/2024
  */
 
-@Component
 public class AppConfig {
-    public AppConfig() {
-        System.out.println("Spring Bean One");
-    }
 }
