@@ -20,9 +20,12 @@ public class SpringBean1 {
         return new SpringBean3();
     }
 
-    /*@Bean
+    @Bean
     public SpringBean2 springBean2(){
         System.out.println("SpringBean2() method is invoked");
+        springBean4();
+        springBean4();
+        springBean4();
         return new SpringBean2(springBean4());
     }
 
@@ -30,5 +33,5 @@ public class SpringBean1 {
     public SpringBean4 springBean4(){
         System.out.println("SpringBean4() method is invoked");
         return new SpringBean4();
-    }*/
+    }
 }
