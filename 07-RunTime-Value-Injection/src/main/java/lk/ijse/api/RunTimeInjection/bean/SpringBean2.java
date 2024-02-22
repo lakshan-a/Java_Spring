@@ -10,15 +10,19 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
+
 public class SpringBean2 {
+
     public SpringBean2(@Value("${USERNAME}") String username,
                        @Value("${USERDOMAIN}") String user,
                        @Value("${POWERSHELL_DISTRIBUTION_CHANNEL}") String dist,
                        @Value("${java.version}") String java) {
+
         System.out.println("SpringBean2() - Constructor");
         System.out.println("username : " + username);
-        System.out.println("userrdomain : " + user);
+        System.out.println("USERDOMAIN : " + user);
         System.out.println("Powershell : " + dist);
         System.out.println("version : " + java);
+
     }
 }
