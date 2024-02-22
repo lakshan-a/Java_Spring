@@ -6,6 +6,7 @@ package lk.ijse.api.SpringConfiguration.bean;
  * @date: 2/22/2024
  */
 
+
 public class XMLConfigSpringBean {
 
     public XMLConfigSpringBean() {
