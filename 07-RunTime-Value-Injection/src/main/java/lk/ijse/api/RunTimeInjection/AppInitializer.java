@@ -21,7 +21,7 @@ public class AppInitializer {
 
         System.out.println("========================================");
         Map<String,String> map = System.getenv();
-//        System.out.println(map);
+        System.out.println(map);
         for (String keys : map.keySet()){
             System.out.println(keys + "=" + map.get(keys));
         }
@@ -29,7 +29,6 @@ public class AppInitializer {
         System.out.println("========================================");
         Properties properties = System.getProperties();
         System.out.println(properties);
-
         for (Object keys : properties.keySet()){
             System.out.println(keys + "=" + properties.get(keys));
         }
