@@ -18,7 +18,7 @@ public class AppConfig {
 
     @Bean
     public SpringBean2 springBean2(){
-        return new SpringBean2();
+        return new SpringBean2(springBean4());
     }
 
     @Bean

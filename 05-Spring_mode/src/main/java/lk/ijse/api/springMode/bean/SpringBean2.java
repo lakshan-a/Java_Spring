@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 //@Component
 public class SpringBean2 {
-    public SpringBean2() {
-        System.out.println("SpringBean2() - Constructor");
+    public SpringBean2(SpringBean4 springBean4) {
+        System.out.println("SpringBean2() - Constructor"+springBean4);
     }
 }
