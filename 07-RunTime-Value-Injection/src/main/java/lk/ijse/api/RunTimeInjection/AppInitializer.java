@@ -20,6 +20,9 @@ public class AppInitializer {
 
         Map<String,String> map = System.getenv();
         System.out.println(map);
+        for (String keys : map.keySet()){
+            System.out.println(keys + "=" + map.get(keys));
+        }
 
     }
 
