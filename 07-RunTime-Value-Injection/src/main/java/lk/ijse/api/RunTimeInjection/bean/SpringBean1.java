@@ -31,7 +31,8 @@ public class SpringBean1 {
                         @Value("1,2,3,4,5") int[] myIntArray,
                         @Value("1,2,3,4,5") List<String> List,
                         @Value("1,2,3,4,5")Set<String> set,
-                        @Value("1") char myChar){
+                        @Value("1") char myChar) {
+
         System.out.println(" String : " + myString);
         System.out.println(" Int : " + myInt);
         System.out.println(" Double : " + myDouble);
