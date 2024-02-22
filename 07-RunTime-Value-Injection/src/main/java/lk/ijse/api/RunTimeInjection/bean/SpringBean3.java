@@ -33,7 +33,8 @@ public class SpringBean3 {
         System.out.println(env.getProperty("app.env3"));
 //        null
         System.out.println(env.getProperty("app.env4"));
-        System.out.println(env.getRequiredProperty("app.env4"));
+//        error not found
+//        System.out.println(env.getRequiredProperty("app.env4"));
 
     }
 }
