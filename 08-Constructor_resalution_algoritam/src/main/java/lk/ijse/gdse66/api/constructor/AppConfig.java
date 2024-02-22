@@ -5,5 +5,6 @@ package lk.ijse.gdse66.api.constructor;
  * @author: LakshanR
  * @date: 2/22/2024
  */
-public class AppCnfig {
+public class AppConfig {
+
 }

@@ -1,5 +1,7 @@
 package lk.ijse.gdse66.api.constructor;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
@@ -7,6 +9,9 @@ package lk.ijse.gdse66.api.constructor;
  */
 public class AppInitializer {
     public static void main(String[] args) {
-
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.register(AppConfig.class);
+        ctx.refresh();
+        ctx.registerShutdownHook();
     }
 }
