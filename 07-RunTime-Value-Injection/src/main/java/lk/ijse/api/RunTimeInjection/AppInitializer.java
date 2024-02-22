@@ -31,7 +31,7 @@ public class AppInitializer {
         System.out.println(properties);
 
         for (Object keys : properties.keySet()){
-            System.out.println(keys + "=" + map.get(keys.toString()));
+            System.out.println(keys + "=" + properties.get(keys));
         }
 
     }
