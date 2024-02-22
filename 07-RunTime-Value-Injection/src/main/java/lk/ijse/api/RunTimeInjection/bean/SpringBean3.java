@@ -1,5 +1,7 @@
 package lk.ijse.api.RunTimeInjection.bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,6 +12,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SpringBean3 {
+
+    @Autowired
+    private Environment wnv;
 
     public SpringBean3() {
         System.out.println("SpringBean3() - Constructor");
