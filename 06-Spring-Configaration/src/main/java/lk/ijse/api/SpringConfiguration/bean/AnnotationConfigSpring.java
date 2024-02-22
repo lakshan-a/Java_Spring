@@ -5,6 +5,7 @@ package lk.ijse.api.SpringConfiguration.bean;
  * @author: LakshanR
  * @date: 2/22/2024
  */
+
 public class AnnotationConfigSpring {
 
     public AnnotationConfigSpring() {

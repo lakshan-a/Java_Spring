@@ -1,5 +1,6 @@
 package lk.ijse.api.SpringConfiguration.dao;
 
+import lk.ijse.api.SpringConfiguration.bo.BOSpringBean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -10,7 +11,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DAOSpringBean {
-    public DAOSpringBean() {
-        System.out.println("DAOSpringBean() - Constructor");
+
+    public DAOSpringBean daoSpringBean(){
+        return new DAOSpringBean();
     }
 }

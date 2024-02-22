@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BOSpringBean {
-    public BOSpringBean() {
-        System.out.println("BOSpringBean() - Constructor");
+
+    public BOSpringBean boSpringBean(){
+        return new BOSpringBean();
     }
 }
