@@ -19,4 +19,16 @@ public class SpringBean1 {
     public SpringBean3 sprinBeanThree(){
         return new SpringBean3();
     }
+
+    @Bean
+    public SpringBean2 springBean2(){
+        System.out.println("SpringBean2() method is invoked");
+        return new SpringBean2(springBean4());
+    }
+
+    @Bean
+    public SpringBean4 springBean4(){
+        System.out.println("SpringBean4() method is invoked");
+        return new SpringBean4();
+    }
 }
