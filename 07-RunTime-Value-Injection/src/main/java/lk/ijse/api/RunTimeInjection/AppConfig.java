@@ -1,5 +1,6 @@
 package lk.ijse.api.RunTimeInjection;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
@@ -15,5 +16,10 @@ public class AppConfig {
 
     public AppConfig() {
         System.out.println("AppConfig() - Constructor");
+    }
+
+    @Bean
+    public String getString(){
+        return "IJSE";
     }
 }
