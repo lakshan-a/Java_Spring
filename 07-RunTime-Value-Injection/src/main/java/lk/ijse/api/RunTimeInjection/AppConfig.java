@@ -1,9 +1,15 @@
 package lk.ijse.api.RunTimeInjection;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
  * @date: 2/22/2024
  */
+
+@Configuration
+@Component
 public class AppConfig {
 }
