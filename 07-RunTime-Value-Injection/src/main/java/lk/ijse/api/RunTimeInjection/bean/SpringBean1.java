@@ -21,10 +21,10 @@ import java.util.Set;
 @Component
 public class SpringBean1 {
 
-    /*@Value("Amal")
-    private String name;*/
+    @Value("Amal")
+    private String name;
 
-    /*public SpringBean1 (@Value("IJSE") String myString,
+    public SpringBean1 (@Value("IJSE") String myString,
                         @Value("6") int myInt,
                         @Value("6.2") double myDouble,
                         @Value("true") boolean myBoolean,
@@ -42,11 +42,11 @@ public class SpringBean1 {
         System.out.println("List : " + List);
         System.out.println("Set : " + set);
         System.out.println("name :" + name);
-    }*/
+    }
 
-    /*@PostConstruct
+    @PostConstruct
     public void initialize(){
         System.out.println("name : " +name);
-    }*/
+    }
 
 }
