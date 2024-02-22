@@ -1,7 +1,6 @@
 package lk.ijse.api.springMode;
 
-import lk.ijse.api.springMode.bean.SpringBeanOne;
-import lk.ijse.api.springMode.bean.SpringBeanTwo;
+import lk.ijse.api.springMode.bean.SpringBean2;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    public SpringBeanTwo springBeanTwo(){
-        return new SpringBeanTwo();
+    public SpringBean2 springBeanTwo(){
+        return new SpringBean2();
     }
 }

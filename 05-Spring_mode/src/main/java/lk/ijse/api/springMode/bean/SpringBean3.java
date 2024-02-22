@@ -5,8 +5,8 @@ package lk.ijse.api.springMode.bean;
  * @author: LakshanR
  * @date: 2/22/2024
  */
-public class SprinBeanThree {
-    public SprinBeanThree() {
-        System.out.println("SpringBeanThree");
+public class SpringBean3 {
+    public SpringBean3() {
+        System.out.println("SpringBean3() - Constructor");
     }
 }
