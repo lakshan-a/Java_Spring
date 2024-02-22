@@ -1,4 +1,4 @@
-package lk.ijse.api.SpringConfiguration.bean.dao;
+package lk.ijse.api.SpringConfiguration.dao;
 
 /**
  * @version: v0.0.1
