@@ -6,4 +6,5 @@ package lk.ijse.api.SpringConfiguration;
  * @date: 2/22/2024
  */
 public class AppConfig {
+
 }
