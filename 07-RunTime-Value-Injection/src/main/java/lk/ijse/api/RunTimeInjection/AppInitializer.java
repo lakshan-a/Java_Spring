@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.Collection;
 import java.util.Map;
+import java.util.Properties;
 
 /**
  * @version: v0.0.1
@@ -18,10 +19,18 @@ public class AppInitializer {
         ctx.refresh();
         ctx.registerShutdownHook();
 
+        System.out.println("========================================");
         Map<String,String> map = System.getenv();
-        System.out.println(map);
+//        System.out.println(map);
         for (String keys : map.keySet()){
             System.out.println(keys + "=" + map.get(keys));
+        }
+
+        System.out.println("========================================");
+        Properties properties = System.getProperties();
+        System.out.println(properties);
+        for (Object keys : properties.keySet()){
+            System.out.println();
         }
 
     }
