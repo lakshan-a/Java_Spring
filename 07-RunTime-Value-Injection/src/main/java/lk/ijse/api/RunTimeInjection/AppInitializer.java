@@ -19,12 +19,12 @@ public class AppInitializer {
         ctx.refresh();
         ctx.registerShutdownHook();
 
-        System.out.println("========================================");
+        /*System.out.println("========================================");
         Map<String,String> map = System.getenv();
 //        System.out.println(map);
         for (String keys : map.keySet()){
             System.out.println(keys + "=" + map.get(keys));
-        }
+        }*/
 
         System.out.println("========================================");
         Properties properties = System.getProperties();
