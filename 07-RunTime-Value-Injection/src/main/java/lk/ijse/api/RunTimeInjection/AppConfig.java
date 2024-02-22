@@ -3,6 +3,7 @@ package lk.ijse.api.RunTimeInjection;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -15,19 +16,17 @@ import java.util.ArrayList;
 
 @Configuration
 @ComponentScan
+@PropertySource("")
 public class AppConfig {
 
     /*public AppConfig() {
         System.out.println("AppConfig() - Constructor");
     }*/
 
-    @Bean
+    /*@Bean
     public String getString(){
         return "IJSE";
-    }
-
-    /*public ArrayList<String>list{
-
     }*/
+
 
 }
