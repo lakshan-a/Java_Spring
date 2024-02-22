@@ -2,6 +2,9 @@ package lk.ijse.api.RunTimeInjection;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Collection;
+import java.util.Map;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
@@ -14,6 +17,10 @@ public class AppInitializer {
         ctx.register(AppConfig.class);
         ctx.refresh();
         ctx.registerShutdownHook();
+
+        Map<String,String> map = System.getenv();
+        System.out.println(map);
+
     }
 
 }
