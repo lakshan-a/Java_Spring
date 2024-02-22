@@ -6,7 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @version: v0.0.1
@@ -26,13 +28,15 @@ public class SpringBean1 {
                         @Value("6.2") double myDouble,
                         @Value("true") boolean myBoolean,
                         @Value("1,2,3,4,5") int[] myIntArray,
-                        @Value("a") char myChar){
+                        @Value("1,2,3,4,5") List<String> List,
+                        @Value("1") char myChar){
         System.out.println("My String : " + myString);
         System.out.println("My Int : " + myInt);
         System.out.println("My Double : " + myDouble);
         System.out.println("My Boolean : " + myBoolean);
         System.out.println("My Array : " + Arrays.toString(myIntArray));
         System.out.println("My Char : " + myChar);
+        System.out.println("My Char : " + List);
         System.out.println("name :" + name);
     }
 

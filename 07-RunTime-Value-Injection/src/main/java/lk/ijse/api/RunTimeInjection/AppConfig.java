@@ -23,4 +23,6 @@ public class AppConfig {
     public String getString(){
         return "IJSE";
     }
+
+
 }
