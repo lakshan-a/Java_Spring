@@ -1,5 +1,7 @@
 package lk.ijse.api.SpringConfiguration;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
@@ -7,6 +9,10 @@ package lk.ijse.api.SpringConfiguration;
  */
 public class Applnitializer {
     public static void main(String[] args) {
+        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
+        ctx.register(AppConfig.class);
+        ctx.refresh();
+        ctx.registerShutdownHook();
 
     }
 }
