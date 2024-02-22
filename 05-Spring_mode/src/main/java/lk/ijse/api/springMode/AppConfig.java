@@ -19,4 +19,5 @@ public class AppConfig {
     public SpringBean2 springBeanTwo(){
         return new SpringBean2();
     }
+
 }
