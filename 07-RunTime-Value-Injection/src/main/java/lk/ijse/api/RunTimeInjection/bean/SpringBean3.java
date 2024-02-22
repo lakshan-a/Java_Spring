@@ -31,7 +31,6 @@ public class SpringBean3 {
         System.out.println(env.getProperty("app.env1"));
         System.out.println(env.getProperty("app.env2"));
         System.out.println(env.getProperty("app.env3"));
-        System.out.println(env.getProperty("ALLUSERSPROFILE"));
 
     }
 }
