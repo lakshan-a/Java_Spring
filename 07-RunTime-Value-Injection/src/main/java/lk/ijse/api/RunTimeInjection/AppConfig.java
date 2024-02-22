@@ -5,6 +5,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
@@ -24,5 +26,8 @@ public class AppConfig {
         return "IJSE";
     }
 
+    /*public ArrayList<String>list{
+
+    }*/
 
 }

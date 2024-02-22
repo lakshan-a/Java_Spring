@@ -9,6 +9,7 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @version: v0.0.1
@@ -29,6 +30,7 @@ public class SpringBean1 {
                         @Value("true") boolean myBoolean,
                         @Value("1,2,3,4,5") int[] myIntArray,
                         @Value("1,2,3,4,5") List<String> List,
+                        @Value("1,2,3,4,5")Set set,
                         @Value("1") char myChar){
         System.out.println("My String : " + myString);
         System.out.println("My Int : " + myInt);
@@ -37,6 +39,7 @@ public class SpringBean1 {
         System.out.println("My Array : " + Arrays.toString(myIntArray));
         System.out.println("My Char : " + myChar);
         System.out.println("My ArrayList : " + List);
+        System.out.println("My Set : " + set);
         System.out.println("name :" + name);
     }
 
