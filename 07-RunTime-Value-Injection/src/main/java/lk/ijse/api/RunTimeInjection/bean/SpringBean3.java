@@ -20,4 +20,8 @@ public class SpringBean3 {
         System.out.println("SpringBean3() - Constructor");
         System.out.println(env);
     }
+
+    public void initialize(){
+        System.out.println(env);
+    }
 }
