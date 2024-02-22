@@ -5,5 +5,5 @@ package lk.ijse.api.springMode.bean;
  * @author: LakshanR
  * @date: 2/22/2024
  */
-public class SpringBean {
+public class SpringBeanOne {
 }
