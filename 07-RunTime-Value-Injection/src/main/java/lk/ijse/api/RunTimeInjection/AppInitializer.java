@@ -26,13 +26,13 @@ public class AppInitializer {
             System.out.println(keys + "=" + map.get(keys));
         }*/
 
-        System.out.println("========================================");
+        /*System.out.println("========================================");
         Properties properties = System.getProperties();
 //        System.out.println(properties);
         properties.put("city","Galle");
         for (Object keys : properties.keySet()){
             System.out.println(keys + "=" + properties.get(keys));
-        }
+        }*/
 
     }
 
