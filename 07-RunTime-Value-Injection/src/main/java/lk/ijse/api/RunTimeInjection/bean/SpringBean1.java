@@ -13,9 +13,12 @@ import org.springframework.stereotype.Component;
 @Configuration
 @Component
 public class SpringBean1 {
+    @Value("Amal")
+    private String name;
 
     public SpringBean1 (@Value("IJSE") String myString){
         System.out.println("SpringBean1() - Constructor : " + myString);
+        System.out.println("name :" + name);
     }
 
 }
