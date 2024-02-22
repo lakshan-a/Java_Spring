@@ -1,5 +1,10 @@
 package lk.ijse.api.springMode.bean;
 
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
 /**
  * @version: v0.0.1
  * @author: LakshanR
@@ -7,8 +12,36 @@ package lk.ijse.api.springMode.bean;
  */
 
 
-public class SpringBean4 {
+public class SpringBean4 implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
     public SpringBean4() {
         System.out.println("SpringBean4() - Constructor ");
+    }
+
+    @Override
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        System.out.println("SpringBean4 - setBeanFactory");
+    }
+
+    @Override
+    public void setBeanName(String s) {
+        System.out.println("SpringBean4 - setBeanName" + s);
+
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        System.out.println("SpringBean4 - destroy");
+
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("SpringBean4 - afterPropertiesSet");
+
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("SpringBean4 - setApplicationContext");
     }
 }

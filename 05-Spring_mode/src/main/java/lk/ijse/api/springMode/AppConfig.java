@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    public SpringBean2 springBeanTwo(){
+    public SpringBean2 springBean2(){
         return new SpringBean2();
     }
 
@@ -25,5 +25,6 @@ public class AppConfig {
     public SpringBean4 springBean4(){
         return new SpringBean4();
     }
+
 
 }
