@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.util.Arrays;
 
 /**
  * @version: v0.0.1
@@ -25,11 +26,11 @@ public class SpringBean1 {
                         @Value("6.2") double myDouble,
                         @Value("true") boolean myBoolean,
                         @Value("1,2,3,4,5") int[] myIntArray){
-        System.out.println("SpringBean1() - Constructor : " + myString);
-        System.out.println("SpringBean1() - Constructor : " + myInt);
-        System.out.println("SpringBean1() - Constructor : " + myDouble);
-        System.out.println("SpringBean1() - Constructor : " + myBoolean);
-        System.out.println("SpringBean1() - Constructor : " + myIntArray);
+        System.out.println("My String : " + myString);
+        System.out.println("My Int : " + myInt);
+        System.out.println("My Double : " + myDouble);
+        System.out.println("My Boolean : " + myBoolean);
+        System.out.println("My Array : " + Arrays.toString(myIntArray));
         System.out.println("name :" + name);
     }
 
