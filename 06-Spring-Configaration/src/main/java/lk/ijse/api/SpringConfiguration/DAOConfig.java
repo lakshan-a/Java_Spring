@@ -11,4 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DAOConfig {
+    public DAOConfig() {
+        System.out.println("DAOSpringBean() - Constructor");
+    }
 }
