@@ -8,6 +8,7 @@ package lk.ijse.api.SpringConfiguration.bean;
 
 
 public class XMLConfigSpringBean {
+
     public XMLConfigSpringBean() {
         System.out.println("XMLConfigSpringBean() - Constructor");
     }
