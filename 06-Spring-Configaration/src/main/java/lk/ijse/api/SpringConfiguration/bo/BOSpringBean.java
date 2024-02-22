@@ -6,4 +6,7 @@ package lk.ijse.api.SpringConfiguration.bo;
  * @date: 2/22/2024
  */
 public class BOSpringBean {
+    public BOSpringBean() {
+        System.out.println("BOSpringBean() - Constructor");
+    }
 }

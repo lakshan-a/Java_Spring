@@ -6,4 +6,7 @@ package lk.ijse.api.SpringConfiguration.dao;
  * @date: 2/22/2024
  */
 public class DAOSpringBean {
+    public DAOSpringBean() {
+        System.out.println("DAOSpringBean() - Constructor");
+    }
 }
