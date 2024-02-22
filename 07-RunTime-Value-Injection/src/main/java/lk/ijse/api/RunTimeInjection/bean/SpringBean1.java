@@ -9,9 +9,11 @@ import org.springframework.stereotype.Component;
  * @date: 2/22/2024
  */
 
-@Configuration
+//@Configuration
+@Component
 public class SpringBean1 {
-    public SpringBean1() {
-        System.out.println("SpringBean1() - Constructor");
+
+    public SpringBean1 (String myString){
+        System.out.println("SpringBean1() - Constructor : " + myString);
     }
 }

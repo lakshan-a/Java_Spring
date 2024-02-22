@@ -12,4 +12,8 @@ import org.springframework.stereotype.Component;
 @Configuration
 @Component
 public class AppConfig {
+
+    public AppConfig() {
+        System.out.println("AppConfig() - Constructor");
+    }
 }
