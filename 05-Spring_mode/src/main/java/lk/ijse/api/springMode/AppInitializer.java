@@ -13,5 +13,7 @@ public class AppInitializer {
         ctx.register(AppConfig.class);
         ctx.refresh();
         ctx.registerShutdownHook();
+
+
     }
 }
