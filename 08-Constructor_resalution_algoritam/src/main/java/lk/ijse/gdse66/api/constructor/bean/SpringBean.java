@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @date: 2/22/2024
  */
 
-
+@Component
 public class SpringBean {
     public SpringBean() {
         System.out.println("SpringBean() - Constructor");
