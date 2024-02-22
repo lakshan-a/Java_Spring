@@ -6,4 +6,7 @@ package lk.ijse.api.springMode;
  * @date: 2/22/2024
  */
 public class AppInitializer {
+    public static void main(String[] args) {
+        System.out.println("Spring Mode");
+    }
 }
