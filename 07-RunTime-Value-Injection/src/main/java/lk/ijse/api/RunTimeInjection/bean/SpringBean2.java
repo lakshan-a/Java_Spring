@@ -11,8 +11,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SpringBean2 {
-    public SpringBean2(@Value("${USERNAME}") String username) {
+    public SpringBean2(@Value("${USERNAME}") String username,
+                       @Value("${USERDOMAIN}") String user) {
         System.out.println("SpringBean2() - Constructor");
         System.out.println("username : " + username);
+        System.out.println("userrdomain : " + user);
     }
 }
