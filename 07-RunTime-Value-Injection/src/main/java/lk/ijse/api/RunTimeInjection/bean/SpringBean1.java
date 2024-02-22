@@ -36,7 +36,7 @@ public class SpringBean1 {
         System.out.println("My Boolean : " + myBoolean);
         System.out.println("My Array : " + Arrays.toString(myIntArray));
         System.out.println("My Char : " + myChar);
-        System.out.println("My Char : " + List);
+        System.out.println("My ArrayList : " + List);
         System.out.println("name :" + name);
     }
 
