@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 public class SpringBean2 {
 
-   /* public SpringBean2(@Value("${USERNAME}") String username,
+    public SpringBean2(@Value("${USERNAME}") String username,
                        @Value("${USERDOMAIN}") String user,
                        @Value("${POWERSHELL_DISTRIBUTION_CHANNEL}") String dist,
                        @Value("${java.version}") String java,
@@ -30,5 +30,5 @@ public class SpringBean2 {
         System.out.println("app.env2 : " + env2);
         System.out.println("app.env3 : " + env3);
 
-    }*/
+    }
 }

@@ -21,6 +21,6 @@ public class SpringBean3 {
     }
 
     public void initialize(){
-        System.out.println(env);
+        System.out.println(env.getProperty("USERNAME"));
     }
 }
