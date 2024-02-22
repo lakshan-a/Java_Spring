@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="RunTime-Value-Injection" />
+        <module name="07-RunTime-Value-Injection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="RunTime-Value-Injection" target="1.8" />
+      <module name="07-RunTime-Value-Injection" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

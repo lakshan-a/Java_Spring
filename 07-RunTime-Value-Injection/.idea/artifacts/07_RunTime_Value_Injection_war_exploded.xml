@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="RunTime-Value-Injection" />
+          <element id="module-output" name="07-RunTime-Value-Injection" />
         </element>
       </element>
       <element id="directory" name="META-INF">
