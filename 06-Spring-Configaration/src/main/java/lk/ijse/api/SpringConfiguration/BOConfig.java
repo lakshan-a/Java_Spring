@@ -11,4 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class BOConfig {
+    public BOConfig() {
+        System.out.println("BOConfig() - Constructor");
+    }
 }
