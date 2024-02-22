@@ -25,12 +25,14 @@ public class SpringBean1 {
                         @Value("6") int myInt,
                         @Value("6.2") double myDouble,
                         @Value("true") boolean myBoolean,
-                        @Value("1,2,3,4,5") int[] myIntArray){
+                        @Value("1,2,3,4,5") int[] myIntArray,
+                        @Value("a") char myChar){
         System.out.println("My String : " + myString);
         System.out.println("My Int : " + myInt);
         System.out.println("My Double : " + myDouble);
         System.out.println("My Boolean : " + myBoolean);
         System.out.println("My Array : " + Arrays.toString(myIntArray));
+        System.out.println("My Char : " + myChar);
         System.out.println("name :" + name);
     }
 
