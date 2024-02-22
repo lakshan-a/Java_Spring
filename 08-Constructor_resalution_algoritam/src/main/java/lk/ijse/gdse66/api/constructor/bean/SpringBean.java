@@ -7,6 +7,6 @@ package lk.ijse.gdse66.api.constructor.bean;
  */
 public class SpringBean {
     public SpringBean() {
-        System.out.println();
+        System.out.println("SpringBean() - Constructor");
     }
 }
