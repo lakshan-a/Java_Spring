@@ -31,5 +31,10 @@ public class AppConfig {
         return new SpringBean4();
     }
 
+    public String myString(){
+        System.out.println("SpringBean4() method is invoked");
+        return "IJSE";
+    }
+
 
 }
