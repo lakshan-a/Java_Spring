@@ -33,14 +33,14 @@ public class SpringBean1 {
                         @Value("1,2,3,4,5")Set<String> set,
                         @Value("1") char myChar) {
 
-        System.out.println(" String : " + myString);
-        System.out.println(" Int : " + myInt);
-        System.out.println(" Double : " + myDouble);
-        System.out.println(" Boolean : " + myBoolean);
-        System.out.println(" Array : " + Arrays.toString(myIntArray));
-        System.out.println(" Char : " + myChar);
-        System.out.println(" List : " + List);
-        System.out.println(" Set : " + set);
+        System.out.println("String : " + myString);
+        System.out.println("Int : " + myInt);
+        System.out.println("Double : " + myDouble);
+        System.out.println("Boolean : " + myBoolean);
+        System.out.println("Array : " + Arrays.toString(myIntArray));
+        System.out.println("Char : " + myChar);
+        System.out.println("List : " + List);
+        System.out.println("Set : " + set);
         System.out.println("name :" + name);
     }
 
