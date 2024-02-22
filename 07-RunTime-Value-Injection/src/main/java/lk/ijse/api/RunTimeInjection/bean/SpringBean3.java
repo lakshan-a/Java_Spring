@@ -14,9 +14,10 @@ import org.springframework.stereotype.Component;
 public class SpringBean3 {
 
     @Autowired
-    private Environment wnv;
+    private Environment env;
 
     public SpringBean3() {
         System.out.println("SpringBean3() - Constructor");
+        System.out.println(env);
     }
 }
