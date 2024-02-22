@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @date: 2/22/2024
  */
 
-//@Configuration
+@Configuration
 @ComponentScan
 public class AppConfig {
 
