@@ -12,11 +12,11 @@ import org.springframework.context.annotation.Configuration;
  * @date: 2/22/2024
  */
 
-@Configuration
+//@Configuration
 @ComponentScan
 public class AppConfig {
 
-  /*  @Bean
+    @Bean
     public SpringBean2 springBean2(){
         System.out.println("SpringBean2() method is invoked");
         return new SpringBean2(springBean4());
@@ -26,7 +26,7 @@ public class AppConfig {
     public SpringBean4 springBean4(){
         System.out.println("SpringBean4() method is invoked");
         return new SpringBean4();
-    }*/
+    }
 
 
 }
