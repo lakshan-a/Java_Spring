@@ -19,6 +19,9 @@ public class AppConfig {
     @Bean
     public SpringBean2 springBean2(){
         System.out.println("SpringBean2() method is invoked");
+        springBean4();
+        springBean4();
+        springBean4();
         return new SpringBean2(springBean4());
     }
 
