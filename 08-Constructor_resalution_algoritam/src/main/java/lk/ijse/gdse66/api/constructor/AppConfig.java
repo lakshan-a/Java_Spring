@@ -24,4 +24,9 @@ public class AppConfig {
         return 21;
     }
 
+    @Bean
+    public Boolean myBoolean(){
+        return true;
+    }
+
 }
