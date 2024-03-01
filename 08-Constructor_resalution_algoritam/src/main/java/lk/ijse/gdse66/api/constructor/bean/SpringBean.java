@@ -21,7 +21,7 @@ public class SpringBean {
         System.out.println("SpringBean() - Constructor");
     }*/
 
-    @Autowired
+    @Autowired(required = false)
     public SpringBean(String name, int age, boolean isMale) {
         this.name = name;
         this.age = age;
