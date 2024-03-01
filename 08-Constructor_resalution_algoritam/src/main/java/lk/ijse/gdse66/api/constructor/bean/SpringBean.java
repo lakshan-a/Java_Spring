@@ -30,7 +30,7 @@ public class SpringBean {
         System.out.printf("name=%s, age=%s , isMale=%s\n",name,age,isMale);
     }
 
-    @Autowired(required = false)
+   /* @Autowired(required = false)*/
     public SpringBean(String name, int age, boolean isMale, @Nullable float temp) {
         this.name = name;
         this.age = age;
@@ -40,6 +40,7 @@ public class SpringBean {
         System.out.printf("name=%s, age=%s , isMale=%s, temp=%s\n",name,age,isMale,temp);
     }
 
+    @Autowired(required = false)
     public SpringBean(String name, int age) {
         this.name = name;
         this.age = age;
