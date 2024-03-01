@@ -39,4 +39,11 @@ public class SpringBean {
         System.out.println("SpringBean(String , Int , Boolean,Float)");
         System.out.printf("name=%s, age=%s , isMale=%s, temp=%s\n",name,age,isMale,temp);
     }
+
+    public SpringBean(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("SpringBean(String , Int )");
+        System.out.printf("name=%s, age=%s\n",name,age);
+    }
 }
