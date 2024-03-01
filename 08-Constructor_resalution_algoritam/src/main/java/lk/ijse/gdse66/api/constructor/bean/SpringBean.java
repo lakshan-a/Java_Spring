@@ -1,5 +1,6 @@
 package lk.ijse.gdse66.api.constructor.bean;
 
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 /**
@@ -27,7 +28,7 @@ public class SpringBean {
         System.out.printf("name=%s, age=%s , isMale=%s\n",name,age,isMale);
     }*/
 
-    public SpringBean(String name, int age, boolean isMale, float temp) {
+    public SpringBean(String name, int age, boolean isMale, @Nullable float temp) {
         this.name = name;
         this.age = age;
         this.isMale = isMale;
