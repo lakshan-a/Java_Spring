@@ -21,6 +21,7 @@ public class SpringBean {
         System.out.println("SpringBean() - Constructor");
     }*/
 
+    @Autowired
     public SpringBean(String name, int age, boolean isMale) {
         this.name = name;
         this.age = age;
@@ -29,7 +30,7 @@ public class SpringBean {
         System.out.printf("name=%s, age=%s , isMale=%s\n",name,age,isMale);
     }
 
-    @Autowired
+
     public SpringBean(String name, int age, boolean isMale, @Nullable float temp) {
         this.name = name;
         this.age = age;
