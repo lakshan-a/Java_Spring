@@ -32,5 +32,7 @@ public class SpringBean {
         this.age = age;
         this.isMale = isMale;
         this.temp = temp;
+        System.out.println("SpringBean(String , Int , Boolean,Float)");
+        System.out.printf("name=%s, age=%s , isMale=%s, temp=%s\n",name,age,isMale,temp);
     }
 }
