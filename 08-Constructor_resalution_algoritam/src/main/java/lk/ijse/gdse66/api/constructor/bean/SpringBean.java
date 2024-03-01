@@ -10,8 +10,17 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SpringBean {
-    public SpringBean() {
-        System.out.println("SpringBean() - Constructor");
-    }
+    private String name;
+    private int age;
+    private boolean isMale;
 
+    /*public SpringBean() {
+        System.out.println("SpringBean() - Constructor");
+    }*/
+
+    public SpringBean(String name, int age, boolean isMale) {
+        this.name = name;
+        this.age = age;
+        this.isMale = isMale;
+    }
 }
