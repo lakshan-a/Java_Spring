@@ -31,7 +31,7 @@ public class SpringBean {
     }
 
    /* @Autowired(required = false)*/
-    public SpringBean(String name, int age, boolean isMale, @Nullable float temp) {
+    public SpringBean(String name, int age, boolean isMale,  float temp) {
         this.name = name;
         this.age = age;
         this.isMale = isMale;
@@ -47,4 +47,5 @@ public class SpringBean {
         System.out.println("SpringBean(String , Int )");
         System.out.printf("name=%s, age=%s\n",name,age);
     }
+
 }
