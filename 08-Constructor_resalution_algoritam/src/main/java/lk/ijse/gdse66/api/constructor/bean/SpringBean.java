@@ -23,4 +23,5 @@ public class SpringBean {
         this.age = age;
         this.isMale = isMale;
     }
+
 }
